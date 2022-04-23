@@ -1,0 +1,55 @@
+body {
+    background-color: pink;
+    text-align: center;
+}
+
+h1 {
+    background-color: black;
+    color: orange;
+    width: 400px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+h2 {
+    background-color: black;
+    color: orange;
+    border-radius: 50px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+h3 {
+    background-color: black;
+    color: orange;
+    border-radius: 50px;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 25%;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.label {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.buttons {
+    margin: 50px 0px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    color: orange
+}

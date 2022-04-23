@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font: normal 20pt Arial;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var name = window.prompt('Type your name: ')
+        
+        document.writeln(`Your name is ${name} and it has ${name.length} characters.</br>`)
+        document.writeln(`Your upper name is ${name.toUpperCase()}</br>`)
+        document.writeln(`Your lower name is ${name.toLowerCase()}</br>`)
+        
+        var n = Number(window.prompt('Type a float number: '))
+        document.writeln(`Two decimal digits: ${n.toFixed(2)}</br>`)
+        document.writeln(`Three decimal digits: ${n.toFixed(3)}</br>`)
+        document.writeln(`BR pattern: ${n.toFixed(2).replace('.', ',')}</br>`)
+        document.writeln(`BR money pattern: ${n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</br>`)
+        document.writeln(`USD money pattern: ${n.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}</br>`)
+        document.writeln(`EUR money pattern: ${n.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}</br>`)
+    </script>
+</body>
+</html>

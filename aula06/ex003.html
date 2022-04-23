@@ -51,16 +51,18 @@
         Texto dentro da div!
     </div>
 
-    
-    <form action="">
-        <input type="email">
-    </form>
-
     <!-- JavaScript -->
     <script>
-        var a = window.alert('First message.');
-        var b = window.confirm('Do you like JavaScript?');
-        var c = window.prompt('What\'s your name?');
+        var n1 = window.prompt('Type any number')
+        var n2 = window.prompt('Type another number')
+
+        var string = n1 + n2
+        var sum = Number(n1) + Number(n2) // Three distinct ways to do that.
+        var sum2 = Number.parseInt(n1) + Number.parseInt(n2)
+        var sum3 = Number.parseFloat(n1) + Number.parseFloat(n2)
+
+        window.alert('Concatenate strings: ' + string)
+        window.alert(`The sum between ${n1} and ${n2} is ${sum}, ${sum2}, ${sum3}`)
     </script>
 </body>
 
