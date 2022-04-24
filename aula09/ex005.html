@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First steps with DOM</title>
+
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h">Starting studies with DOM</h1>
+    <p>Here it goes the result</p>
+    <p>Learning how to use <strong>DOM</strong> in JS</p>
+    <div id="div">Click on me</div>
+
+    <script>
+        var p = window.document.getElementsByTagName('p') // Paragraph array.
+        var p0 = p[0] // First paragraph.
+        var p1 = p[1] // Second paragraph.
+
+        p0.innerText = "Changing text using JS"
+        p1.innerHTML = "Changing <strong>paragraph html</strong> using JS"
+
+        var div = window.document.getElementById('div') // Array with all elements that belong to div class.
+        var div0 = div[0]
+
+        div.style.background = 'red'
+        div.innerText = "Look! I changed!"
+
+        var title = window.document.getElementsByClassName('h')[0]
+        title.style.color = 'orange'
+
+        window.document.querySelector('div#div').style.color = 'blue'
+        window.document.querySelector('h1.h').style.color = 'pink'
+    </script>
+</body>
+</html>

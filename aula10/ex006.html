@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+
+    <style>
+        #div {
+            background-color: blue;
+            font: normal 20pt Arial;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="div">
+        Do something...
+    </div>
+
+    <!-- <div id="div" onclick="click()" onmouseenter="go_into()" onmouseout="go_out()">
+        Do something...
+    </div> -->
+
+    <script>
+        var div = window.document.getElementById('div')
+        div.addEventListener('click', click)
+        div.addEventListener('mouseenter', go_into)
+        div.addEventListener('mouseout', go_out)
+        
+        function click() {
+            var div = window.document.getElementById('div')
+            div.innerText = 'Clicked!'
+
+            if(div.style.background === 'green') {
+                div.style.background = 'orange'
+            } else {
+                div.style.background = 'green'
+            }
+        }
+
+        function go_into() {
+            var div = window.document.getElementById('div')
+            div.innerText = 'Inside!'
+            div.style.background = 'red'
+        }
+
+        function go_out() {
+            var div = window.document.querySelector('div#div')
+            div.innerText = 'Outside!'
+            div.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>
