@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your country</title>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        #yellow {
+            background-color: orange;
+            width: 800px;
+            height: 500px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 80px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        #blue {
+            background-color: pink;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        #input {
+            width: 90%;
+            
+        }
+        
+        .center {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="yellow">
+        <h1>Where are you from?</h1>
+        <div id="blue">
+            <input class="center" id="input" type="text" placeholder="What's your country?">
+            <button class="center" onclick="check_country()">Confirm</button>
+        </div>
+
+        <h1 id="result">Where are you from?</h1>
+    </div>
+
+    <script>
+        var button = window.document.getElementsByClassName('center')[1]
+        button.addEventListener('click', check_country)
+        
+        function check_country() {
+            var country = window.document.getElementById('input')
+            var result = window.document.getElementById('result')
+
+            var green = window.document.getElementsByTagName('body')[0]
+            var yellow = window.document.getElementById('yellow')
+            var blue = window.document.getElementById('blue')
+
+
+            if(country.value.toLowerCase() == 'brazil' || country.value.toLowerCase() == 'brasil') {
+                result.innerHTML = 'You\'re Brazillian!'
+                green.style.background = 'green'
+                yellow.style.background = 'yellow'
+                blue.style.background = 'blue'
+
+            } else {
+                result.innerHTML = 'You\'re a foreign!'
+                green.style.background = 'gray'
+                yellow.style.background = 'orange'
+                blue.style.background = 'pink'
+            }
+        }
+    </script>
+</body>
+</html>

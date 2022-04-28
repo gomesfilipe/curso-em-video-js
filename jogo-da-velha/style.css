@@ -1,0 +1,73 @@
+body {
+    background-color:  gray;
+}
+
+.tabuleiro {
+    background-color: cadetblue;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.casa {
+    background-color: white;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 4px 4px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font: normal 70pt Arial;
+    text-align: center;
+}
+
+#vez {
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: red;
+    font: normal 30pt Arial;
+}
+
+#char {
+    text-align: center;
+    /* line-height: 100%; */
+    /* margin-top: 60px; */
+}
+
+#title {
+    text-align: center;
+    font: normal 40pt arial;
+    background-color: black;
+    width: 500px;
+    color: red;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#externa {
+    width: 1000px;
+    height: 800px;
+    background-color: rgba(128, 63, 33, 0.551);
+    border: 1px solid black;
+    border-radius: 30px; 
+    margin: 0 auto;
+}
+
+#winner {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    color: red;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.jogo {
+    display: inline-block;
+}
