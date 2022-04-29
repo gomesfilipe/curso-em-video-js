@@ -8,67 +8,58 @@
     <title>Jogo da Velha</title>
 </head>
 <body>
-    <div id="divtitle">
+    <header id="header">
         <h1 id="title">JOGO DA VELHA</h1>
-    </div>
+    </header>
 
-    <div id="externa">
-        <div id="vez" class="jogo">
+    <section id="externa">
+        <section id="vez" class="jogo">
+            <h1>PLAYER:</h1>
             <h1 id="char">X</h1>
-        </div>
+        </section>
         
-        <div class="tabuleiro"  class="jogo"> <!-- Cerca o tabuleiro -->
-            <div> <!-- Primeira linha -->
-                <div class="casa" id="a0"> <!-- Primeira coluna -->
+        <section id="tabuleiro"  class="jogo"> <!-- Cerca o tabuleiro -->
+            <section> <!-- Primeira linha -->
+                <div class="casa" id="a0" onmouseenter="mouse_entra_a0()" onmouseout="mouse_sai_a0()"> <!-- Primeira coluna -->
+                </div>
+                
+                <div class="casa" id="a1" onmouseenter="mouse_entra_a1()" onmouseout="mouse_sai_a1()"> <!-- Segunda coluna -->
+                    
+                </div>
+                
+                <div class="casa" id="a2" onmouseenter="mouse_entra_a2()" onmouseout="mouse_sai_a2()"> <!-- Terceira coluna -->
+                </div>
+            </section>
     
+            <section> <!-- Segunda linha -->
+                <div class="casa" id="b0" onmouseenter="mouse_entra_b0()" onmouseout="mouse_sai_b0()"> <!-- Primeira coluna -->
                 </div>
     
-                <div class="casa" id="a1"> <!-- Segunda coluna -->
-    
+                <div class="casa" id="b1" onmouseenter="mouse_entra_b1()" onmouseout="mouse_sai_b1()"> <!-- Segunda coluna -->
                 </div>
     
-                <div class="casa" id="a2"> <!-- Terceira coluna -->
-    
+                <div class="casa" id="b2" onmouseenter="mouse_entra_b2()" onmouseout="mouse_sai_b2()"> <!-- Terceira coluna -->
                 </div>
-            </div>
+            </section>
     
-            <div> <!-- Segunda linha -->
-                <div class="casa" id="b0"> <!-- Primeira coluna -->
-    
+            <section> <!-- Terceira linha -->
+                <div class="casa" id="c0" onmouseenter="mouse_entra_c0()" onmouseout="mouse_sai_c0()"> <!-- Primeira coluna -->
                 </div>
     
-                <div class="casa" id="b1"> <!-- Segunda coluna -->
-    
+                <div class="casa" id="c1" onmouseenter="mouse_entra_c1()" onmouseout="mouse_sai_c1()"> <!-- Segunda coluna -->
                 </div>
     
-                <div class="casa" id="b2"> <!-- Terceira coluna -->
-    
+                <div class="casa" id="c2" onmouseenter="mouse_entra_c2()" onmouseout="mouse_sai_c2()"> <!-- Terceira coluna -->
                 </div>
-            </div>
-    
-            <div> <!-- Terceira linha -->
-                <div class="casa" id="c0"> <!-- Primeira coluna -->
-    
-                </div>
-    
-                <div class="casa" id="c1"> <!-- Segunda coluna -->
-    
-                </div>
-    
-                <div class="casa" id="c2"> <!-- Terceira coluna -->
-    
-                </div>
-            </div>
-        </div>
+            </section>
+        </section>
         
-        <div id="winner" class="jogo">
+        <section id="winner" class="jogo">
             <h1 id="win">WINNER:</h1>
-        </div>
-    </div>
-
+        </section>
+    </section>
 
     <script src="script.js"> // Importando js
-        
     </script>
 </body>
 </html>

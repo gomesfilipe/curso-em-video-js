@@ -43,6 +43,7 @@ function escreve_casa_a0() {
     var char = window.document.getElementById('char')
     casa.innerHTML = char.textContent
 
+    console.log(char.innerHTML)
     if(char.textContent == 'X') {
         char.textContent = 'O'
     } else {
@@ -259,4 +260,94 @@ function encerrar_partida() {
     } else {
         winner.textContent = 'WINNER: X'
     }
+}
+
+function mouse_entra_a0() {
+    var casa = window.document.getElementById('a0')
+    casa.style.background = 'gray'
+}
+
+function mouse_sai_a0() {
+    var casa = window.document.getElementById('a0')
+    casa.style.background = 'white'
+}
+
+function mouse_entra_a1() {
+    var casa = window.document.getElementById('a1')
+    casa.style.background = 'gray'
+}
+
+function mouse_sai_a1() {
+    var casa = window.document.getElementById('a1')
+    casa.style.background = 'white'
+}
+
+function mouse_entra_a2() {
+    var casa = window.document.getElementById('a2')
+    casa.style.background = 'gray'
+}
+
+function mouse_sai_a2() {
+    var casa = window.document.getElementById('a2')
+    casa.style.background = 'white'
+}
+
+function mouse_entra_b0() {
+    var casa = window.document.getElementById('b0')
+    casa.style.background = 'gray'
+}
+
+function mouse_sai_b0() {
+    var casa = window.document.getElementById('b0')
+    casa.style.background = 'white'
+}
+
+function mouse_entra_b1() {
+    var casa = window.document.getElementById('b1')
+    casa.style.background = 'gray'
+}
+
+function mouse_sai_b1() {
+    var casa = window.document.getElementById('b1')
+    casa.style.background = 'white'
+}
+
+function mouse_entra_b2() {
+    var casa = window.document.getElementById('b2')
+    casa.style.background = 'gray'
+}
+
+function mouse_sai_b2() {
+    var casa = window.document.getElementById('b2')
+    casa.style.background = 'white'
+}
+
+function mouse_entra_c0() {
+    var casa = window.document.getElementById('c0')
+    casa.style.background = 'gray'
+}
+
+function mouse_sai_c0() {
+    var casa = window.document.getElementById('c0')
+    casa.style.background = 'white'
+}
+
+function mouse_entra_c1() {
+    var casa = window.document.getElementById('c1')
+    casa.style.background = 'gray'
+}
+
+function mouse_sai_c1() {
+    var casa = window.document.getElementById('c1')
+    casa.style.background = 'white'
+}
+
+function mouse_entra_c2() {
+    var casa = window.document.getElementById('c2')
+    casa.style.background = 'gray'
+}
+
+function mouse_sai_c2() {
+    var casa = window.document.getElementById('c2')
+    casa.style.background = 'white'
 }
