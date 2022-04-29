@@ -43,7 +43,6 @@ function escreve_casa_a0() {
     var char = window.document.getElementById('char')
     casa.innerHTML = char.textContent
 
-    console.log(char.innerHTML)
     if(char.textContent == 'X') {
         char.textContent = 'O'
     } else {
@@ -251,20 +250,24 @@ function encerrar_partida() {
     c1.removeEventListener('click', escreve_casa_c1)
     c2.removeEventListener('click', escreve_casa_c2)
 
-    var vez = window.document.getElementById('vez')
-    var winner = window.document.getElementById('winner')
+    var vez = window.document.getElementById('char')
+    // var winner = window.document.getElementById('winner')
+    var winner = window.document.getElementById('charwin')
 
-    if(vez.textContent == 'X') { // resolver
-        winner.textContent = 'WINNER: O'
-
+    if(vez.innerText == 'X') { // resolver
+        winner.innerText = 'O'
     } else {
-        winner.textContent = 'WINNER: X'
+        winner.innerText = 'X'
     }
 }
 
 function mouse_entra_a0() {
     var casa = window.document.getElementById('a0')
-    casa.style.background = 'gray'
+    if(casa.innerText == '') {
+        casa.style.background = 'green'
+    } else {
+        casa.style.background = 'red'
+    }
 }
 
 function mouse_sai_a0() {
@@ -274,7 +277,11 @@ function mouse_sai_a0() {
 
 function mouse_entra_a1() {
     var casa = window.document.getElementById('a1')
-    casa.style.background = 'gray'
+    if(casa.innerText == '') {
+        casa.style.background = 'green'
+    } else {
+        casa.style.background = 'red'
+    }
 }
 
 function mouse_sai_a1() {
@@ -284,7 +291,11 @@ function mouse_sai_a1() {
 
 function mouse_entra_a2() {
     var casa = window.document.getElementById('a2')
-    casa.style.background = 'gray'
+    if(casa.innerText == '') {
+        casa.style.background = 'green'
+    } else {
+        casa.style.background = 'red'
+    }
 }
 
 function mouse_sai_a2() {
@@ -294,7 +305,11 @@ function mouse_sai_a2() {
 
 function mouse_entra_b0() {
     var casa = window.document.getElementById('b0')
-    casa.style.background = 'gray'
+    if(casa.innerText == '') {
+        casa.style.background = 'green'
+    } else {
+        casa.style.background = 'red'
+    }
 }
 
 function mouse_sai_b0() {
@@ -304,7 +319,11 @@ function mouse_sai_b0() {
 
 function mouse_entra_b1() {
     var casa = window.document.getElementById('b1')
-    casa.style.background = 'gray'
+    if(casa.innerText == '') {
+        casa.style.background = 'green'
+    } else {
+        casa.style.background = 'red'
+    }
 }
 
 function mouse_sai_b1() {
@@ -314,7 +333,11 @@ function mouse_sai_b1() {
 
 function mouse_entra_b2() {
     var casa = window.document.getElementById('b2')
-    casa.style.background = 'gray'
+    if(casa.innerText == '') {
+        casa.style.background = 'green'
+    } else {
+        casa.style.background = 'red'
+    }
 }
 
 function mouse_sai_b2() {
@@ -324,7 +347,11 @@ function mouse_sai_b2() {
 
 function mouse_entra_c0() {
     var casa = window.document.getElementById('c0')
-    casa.style.background = 'gray'
+    if(casa.innerText == '') {
+        casa.style.background = 'green'
+    } else {
+        casa.style.background = 'red'
+    }
 }
 
 function mouse_sai_c0() {
@@ -334,7 +361,11 @@ function mouse_sai_c0() {
 
 function mouse_entra_c1() {
     var casa = window.document.getElementById('c1')
-    casa.style.background = 'gray'
+    if(casa.innerText == '') {
+        casa.style.background = 'green'
+    } else {
+        casa.style.background = 'red'
+    }
 }
 
 function mouse_sai_c1() {
@@ -344,7 +375,11 @@ function mouse_sai_c1() {
 
 function mouse_entra_c2() {
     var casa = window.document.getElementById('c2')
-    casa.style.background = 'gray'
+    if(casa.innerText == '') {
+        casa.style.background = 'green'
+    } else {
+        casa.style.background = 'red'
+    }
 }
 
 function mouse_sai_c2() {
