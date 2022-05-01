@@ -1,0 +1,105 @@
+body {
+    background: rgb(73, 14, 14);
+}
+
+h1 {
+    color: burlywood;
+    text-align: center;
+    font-size: 25pt;
+}
+
+#extern {
+    width: 800px;
+    background: brown;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 5px black;
+}
+
+#border {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    background: black;
+    margin: auto;
+    padding: 15px;
+}
+
+#current {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    background: white;
+    margin: auto;
+}
+
+#moldure {
+    width: 700px;
+    height: 300px;
+    background: burlywood;
+    margin: auto;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#blackboard {
+    width: 700px;
+    height: 300px;
+    background: white;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#colors {
+    width: 520px;
+    background: black;
+    padding: 15px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.color {
+    background: white;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    display: inline-table;
+}
+
+#gray {
+    background: gray;
+}
+
+#red {
+    background: red;
+}
+
+#orange {
+    background: orange;
+}
+
+#yellow {
+    background: yellow;
+}
+
+#green {
+    background: green;
+}
+
+#blue {
+    background: blue;
+}
+
+#purple {
+    background: purple;
+}
+
+#white {
+    background: cadetblue;
+}
+
+#pink {
+    background: pink;
+}
+
