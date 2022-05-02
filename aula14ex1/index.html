@@ -4,34 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter</title>
+    <title>Multiplication Table</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>COUNTER</h1>
+        <h1>Multiplication Table</h1>
     </header>
 
     <section>
         <div>
-            <p> Begin:
-                <input type="number" id="begin">
+            <p> Number:
+                <input type="number" id="number">
             </p>
 
-            <p> End:
-                <input type="number" id="end">
-            </p>
-
-            <p> Step:
-                <input type="number" id="step">
-            </p>
-
-            <button id="count">Count</button>
+            <button id="generate">Generate</button>
         </div>
         <div id="result">
-                Fill the above data to see the result!
+            <p>
+                <select name="table" id="table" size="10">
+                    <option>
+                        Type a number above.
+                    </option>
+                </select>          
+            </p>
         </div>
-
     </section>
     
     <footer>

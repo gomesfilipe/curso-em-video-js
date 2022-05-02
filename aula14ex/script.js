@@ -6,14 +6,21 @@ function count() {
     var end = Number(document.getElementById('end').value)
     var step = Number(document.getElementById('step').value)
 
-    if(step <= 0 && end < begin) {
+    if(step <= 0) {
         alert('Invalid input!')
     }
-    // alert(begin + ' ' + end + ' ' + step)
+
     var result = document.getElementById('result')
-    result.innerText = ''
-    for(var i = begin; i <= end; i += step) {
-        result.innerText += String(i)
-        result.innerText += '/'
+    result.innerHTML = ''
+
+    if(begin <= end) {
+        for(var i = begin; i <= end; i += step) {
+            result.innerHTML += `${String(i)} \u{1F449} `
+        }
+    } else {
+        for(var i = begin; i >= end; i -= step) {
+            result.innerHTML += `${String(i)} \u{1F449} `
+        }
     }
+    result.innerHTML += `\u{1F3C1}`
 }
